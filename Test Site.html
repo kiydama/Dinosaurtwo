@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="teststyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+      <h1>Dave's Dinosaur Archive</h1>
+      <h2> The ultimate dinosaur emporium.</h2></p>
+    </div>
+    <nav>
+        <div class="left_image"><image src="Rexy.jpg" width= 60px height= 60px></image></div>
+        <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="right_image"><image src="Rexy.jpg" width= 60px height= 60px></image></div>
+    </nav>
+    
+
+   <!-- <div class="header">
+      <h1>Header</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+    <nav>
+        <div class="left_image"><image src="Rexy.jpg" width= 60px height= 60px></image></div>
+        <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="right_image"><image src="Rexy.jpg" width= 60px height= 60px></image></div>
+    </nav>
+  -->
+    
+    <div class="row">
+      <div class="column">
+        <h4>Column</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      </div>
+      
+      <div class="column">
+        <h4>Column</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      </div>
+      
+      <div class="column">
+      <h4>Column</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class ="login form login-form--hidden" id="loginfm">
+        <h3>Login</h3>
+        <form action="Page2.html" method="post"> 
+        <!--<label for ="username"> --> <h5>Username</h5> <!--</label> -->
+        <input type ="text" id="username" name = "username" placeholder="">
+        <p>Password</p>
+        <input type="password" id="password" name="password" placeholder=""> <br><br>
+        <button type="submit" id = "but" disabled="disabled">Sign-in</button> <br><br>
+        <script> 
+        
+            loginfm.addEventListener('input', ()=> {
+                if((username.value.length > 0) && (password.value.length > 0)) {
+                    but.removeAttribute('disabled');
+                }
+                else {
+                    but.setAttribute('disabled');
+                }
+            });
+
+           
+           </script>
+        <a href ='#'style="text-decoration:none;" id="linkCreateAccount"><p>Don't Have an Account?</p></a>
+        </form>
+          </div>
+
+    <div class ="sign-up" id="s-up" method="post" action="Page2.html">
+        <h3>Sign-up</h3>
+        <form action="Page2.html" method="post"> 
+          <br><br>
+        <!--<label for ="username1" color="blue" >Username</label>-->
+        <p3>Username
+        &emsp;&emsp;<input type ="text" id="username1" placeholder="" size="30"></p3><br><br><br>
+        <p3>Email
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;<input type ="email" id="email" placeholder=""size="30"></p3><br><br><br>
+        <p3>Password
+        &emsp;&emsp;<input type="password" id="password1" placeholder="" size="30"> </p3><br><br>
+
+        <!--<button type="submit" onclick="CreateAccount()"> Create Account</button> -->
+        
+        &emsp;&emsp;<button type="submit" onclick="document.getElementById('s-up').submit();">Create Account</button>
+        <!--<a href ='#'style="text-decoration:none;" id="HaveAccount"><p>Already Have an Account?</p></a>-->
+        <br>
+        <a href style="text-decoration:none;" id="HaveAccount">&emsp;&emsp;<p>&emsp;&emsp;<p2><b>Have an Account?</b></p2></p></a>
+    </form>
+    </div> 
+  </div>
+    
+     <script src = "main.js"></script>
+         
+    
+    </body>
+    </html>
+    
