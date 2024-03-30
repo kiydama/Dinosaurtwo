@@ -1,0 +1,236 @@
+{
+    box-sizing : border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding-top: 84px; 
+    text-align: center;
+    background: url('blucirc2.jpg') center no-repeat;
+    background-position:center;
+    padding-bottom: 25px;
+  }
+  
+  
+  /* Style the top navigation bar */
+  
+  .left_image {
+      overflow: hidden;
+      /*background-color: #b32a2a;*/
+      border-radius: 50px;
+      float:left;
+    }
+  nav {
+    overflow: hidden;
+    background-color: #040947;
+    font-size: 18px;
+    border-radius: 50px;
+    height: 75px;  
+    padding-top: 7px;  /**/
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;              /*makes a space of 30 px from nav bar to next element (which is grey div with innner drop-down div)*/
+  }
+  .right_image {
+      overflow: hidden;
+      /*background-color:  #b32a2a;*/
+      border-radius: 50px;
+      float:right;
+  
+    }
+  
+  /* Style the nav links */
+  nav a {
+    
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  nav ul {
+  text-align: center;
+  }
+  
+  nav ul li {
+  display: inline-block;
+  padding: 14px 16px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+   /*Clear floats after the columns*/
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  
+  h1{
+    font-family: 'Permanent Marker', cursive; font-size: 34px;
+    padding-bottom: 15px;                   /*moves the writing in h1 up 10px as it appeared low when header logo was widened*/
+    color: goldenrod;
+    -webkit-text-stroke: 0.5px black;     /*black border around h2 in title2 umtimate emporium*/ 
+  }
+  
+  h2{
+    font-family: 'Permanent Marker', cursive; font-size: 20px;
+    -webkit-text-stroke: 0.5px black;     /*moves the writing in h2 up 10px as it appeared low when header logo was widened*/
+    color: goldenrod;
+    padding-bottom: 10px;                   /*black border around h2 in title2 umtimate emporium*/ 
+  }
+  
+  h3 {
+    /*font-family: 'Julee', cursive; font-size: 50px;*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;
+    color:black;
+  
+   }
+  
+   h4 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;
+    color:black;
+   }
+    
+  p3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;
+    color:rgba(52, 9, 204, 0.87);
+  }
+  
+   p2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 10px;
+    color:rgb(212, 165, 77);
+   }
+
+   p5 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px;
+    font-weight: 600;
+  }
+
+  .flex-containerA{
+    display:flex;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  .flex-containerB{
+    display:flex;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  .flex-containerC{
+    display:flex;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  .flex-containerD{
+    display:flex;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+  .flex-containerE{
+    padding-top: 20px;
+    display:flex;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .flex-pic1{ 
+
+    height: 250px;
+    background-image: url('brontosaurus.jpg');
+    width: 30%;
+    background-repeat: no-repeat;
+    
+  }
+
+  .flex-text1{
+    width: 70%;
+    height: 250px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+    .flex-pic2{ 
+    
+    height: 350px;
+    background-image: url('stegosaurus.jpg');
+    width: 30%;
+    background-repeat: no-repeat;  
+  }
+
+  .flex-text2{
+    width: 70%;
+    height: 325px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+  .flex-pic3{ 
+    
+    height: 250px;
+    background-image: url('Ankylosaur.jpg');
+    width: 30%;
+    background-repeat: no-repeat;
+  }
+  .flex-text3{
+    width: 70%;
+    height: 250px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+  .flex-pic4{ 
+    
+    height: 250px;
+    background-image: url('triceratops.jpg');
+    width: 30%;
+    background-repeat: no-repeat;
+  }
+  .flex-text4{
+    width: 70%;
+    height: 250px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+  .flex-pic5{ 
+    
+    height: 250px;
+    background-image: url('pachycephalosaurus.jpg');
+    width: 30%;
+    background-repeat: no-repeat;
+  }
+  .flex-text5{
+    width: 70%;
+    height: 250px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
