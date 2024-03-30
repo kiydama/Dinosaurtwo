@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!--<link rel="stylesheet" href="teststyle.css"> -->
+    <link rel="stylesheet" href="dinopg2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+      <h1>Dave's Dinosaur Archive</h1>
+      <h2> The ultimate dinosaur emporium.</h2></p>
+    </div> <br>
+    <nav>
+        <div class="left_image"><image src="Rexy.jpg" width= 60px height= 60px></image></div>
+        <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="right_image"><image src="Rexy.jpg" width= 60px height= 60px></image></div>
+    </nav> <br><br>
+    <div class="dropdown1">
+    <div class="dropdownform1">
+    <form action="/action_page.php">
+        <label for="Dinosaurs">Choose a dinosaur:</label>
+        <select name="Dinosaurs" id="dinosaurs" onclick="SelectDinosaur()">
+          <option value="0">Select your Dinosaur type...</option>
+            <option value="Carnivors.html">Carnivors</option>
+            <option value="Herbivors.html">Herbivors</option>
+            <option value="Aquatic.html">Aquatic Dinosaurs</option>
+        </select>
+        <br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp; <br>
+        <input type="submit" value="Submit" class="myButton">
+      </form>
+    </div>
+    </div>
+    <script src = "dropdowndino.js"></script>
+    </body>
+    </html>
+    
